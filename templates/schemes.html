@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Eligible Schemes</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-color: rgba(255, 255, 255, 0.9);
+            backdrop-filter: brightness(0.9);
+        }
+
+        header {
+            background-color: #003366;
+            color: #ffffff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            border: 1px solid #cccccc;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff;
+            position: relative;
+            text-align: left;
+        }
+
+        li h2 {
+            margin: 0;
+            color: #003366;
+        }
+
+        li p {
+            margin: 0.5rem 0;
+            color: #333333;
+        }
+
+        li img {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: 1px solid #cccccc;
+        }
+
+        footer {
+            background-color: #003366;
+            color: #ffffff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Government Schemes Portal</h1>
+    </header>
+
+    <div class="container">
+        <h1>Your Eligible Schemes</h1>
+        <ul>
+            {% for scheme in schemes %}
+            <li>
+                <h2>{{ scheme.name }}</h2>
+                <p>{{ scheme.description }}</p>
+                <p>{{ scheme.translated_desc }}</p>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Government of India. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Government Schemes Portal</title>
+    <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+    }
+  </script>
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <style>
+        /* General Reset */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #003366;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        header h2 {
+            margin: 0;
+            font-size: 1.2rem;
+            font-weight: 300;
+        }
+
+        main {
+            padding: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        section {
+            margin-top: 2rem;
+            padding: 1.5rem;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        section h3 {
+            color: #003366;
+            margin-top: 0;
+        }
+
+        .button-container {
+            margin-top: 2rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            padding: 0.75rem 1.5rem;
+            margin: 0 0.5rem;
+            display: inline-block;
+            background-color: #00509e;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: background-color 0.3s;
+        }
+
+        a:hover {
+            background-color: #003f7e;
+        }
+
+        footer {
+            margin-top: 2rem;
+            background-color: #003366;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+        #google_translate_element {
+      margin: 10px;
+      text-align: right;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Government Schemes Portal</h1>
+        <h2>Know Your Eligible Government Schemes in Your Preferred Language</h2>
+
+    <div id="google_translate_element"></div>
+    </header>
+    
+    <main>
+        <p>
+            This portal is designed to help citizens to know eligible schemes in preferred schemes.
+        </p>
+        <div class="button-container">
+            <a href="{{ url_for('login') }}">Login</a>
+            <a href="{{ url_for('register') }}">Register</a>
+        </div>
+        <section>
+            <h3>About Us</h3>
+            <p>Welcome to Government Schemes Portal !</p>
+            <p>At Government Schemes Portal, we aim to connect you with the government schemes, programs, and benefits you’re eligible for, quickly and easily. Navigating through various schemes and understanding eligibility criteria can be overwhelming, and that's where we come in.</p>
+        </section>
+        <section>
+            <h3>How It Works</h3>
+            <ul>
+                <li><strong>Create Your Profile:</strong> Start by signing up and providing a few basic details about yourself, such as your age, occupation, location, and any other relevant information.</li>
+                <li><strong>Personalized Recommendations:</strong> Based on the information you provide, our platform analyzes your eligibility against a comprehensive database of government schemes and programs tailored for various sectors and demographics.</li>
+                <li><strong>Explore Your Eligible Schemes:</strong> Once the analysis is complete, you’ll receive a curated list of schemes that you qualify for. Each scheme is accompanied by a brief description, its benefits, and the steps to apply.</li>
+                <li><strong>Stay Updated:</strong> Our website ensures that you’re always up-to-date with the latest schemes and announcements. Any new schemes matching your profile will be recommended to you.</li>
+                <li><strong>Language Support:</strong> We believe in inclusivity. That’s why our platform supports multiple languages, ensuring that you can access information in your preferred language.</li>
+                <li><strong>Easy Communication:</strong> To ensure you never miss out, we also send details of your eligible schemes directly to your registered email address.</li>
+            </ul>
+        </section>
+        <section>
+            <h3>Our Mission</h3>
+            <p>Our mission is to bridge the gap between individuals and government resources by simplifying the process of discovering and applying for welfare programs. We aim to empower every citizen to make the most of the opportunities available to them.</p>
+        </section>
+        <section>
+            <h3>Why Choose Us?</h3>
+            <ul>
+                <li><strong>User-Friendly Interface:</strong> Access information with ease.</li>
+                <li><strong>Tailored Recommendations:</strong> Get only the schemes relevant to you.</li>
+                <li><strong>Secure Platform:</strong> Your data privacy is our top priority.</li>
+                <li><strong>Constant Updates:</strong> Always stay informed with the latest schemes.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Government of India. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
